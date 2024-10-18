@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Atributos HTML✨</title>
+</head>
+<body>
+  <h1>Atributos HTML✨</h1>
+  <p>...</p>
+  <p>los atributos en html son propideadees qie se añaden a las etiquetas para pro,ocionar mas informacion o controlar su comportamiento.</p>
+  <p>los atributos siempre estan presente en las etiqueta de apertura y se compone de un nombre y un valor.</p>
+
+  <!-- 
+    sintaxis:
+
+    <etiqueta atributo="valor">...</etiqueta>
+  -->
+
+  <!--
+
+    Atributo src
+
+    Especifica la URL de un recurso como,imagen, audio, video.
+    
+    se usa en las etiquetas como: <img>, <audio>, <video>, <frame>
+    
+    se deve definir la ubicacion del archivo que se va a mostrar o cargar
+
+  -->
+
+  <img src="./bulbasaur.jpg" alt=""  />
+
+  <video src="./video"></video>
+
+  <audio src="./audio"></audio>
+
+  <frame src="kiwi.webp" frameborder="0" ></frame>
+  
+  <!--
+    2. alt
+    
+    proporciona un texto alternativo para cuando una imagen no pueda mostrar.
+
+    Esto es para volver accesbles las imagenes a los ususarios con discapasidades visuales.
+  -->
+
+    <img src="./salamans" alt="Este es un mensaje que describe la imagen no cargada" />
+  <!--
+    3. Target
+    
+    Define donde se abrira un enlace.
+
+    _blank se abre una pestaña nueva 
+    _self se abre en la misma pestaña (valor por defecto)
+  -->
+<p></p>
+    <a href="http://Instagram.com" target="_blank">sigeme en instagram</a>
+  <!--
+    
+    4. rel=""
+
+    Espesifica la relacion entre todo el documento actual y un recurso enladado
+  -->
+
+  <link rel="stylesheet" href="./Style.css">
+
+  <a href="http://www.google.com" rel="nofollow"></a>
+
+  <script rel="javascrip" src="./scrip.js">
+    let mesaje = "hola mundo"; console.log/(mesaje);
+  </script>
+
+    <!--
+      
+      5. Style
+      
+      Funciona para deinir estilos CSS en la linea directamente en la etiqueta...
+      
+      Aplica estos estilos a un elemento directamente. No es recomendable usarlo mucho lo recomendable es usar hojas de estilo.
+
+      Se puede pasar a la mayoria de las etiquetas-
+    -->
+
+  <P style="color:white; font-size:56px">Texto de color Blanquito!</P>
+
+
+    <!--
+  
+    6.id
+
+    Define un identificador unico para una etiqueta.
+  
+    Funcionan para cualquier etiqueta y se utilizan para enlazar un elemento on una hoja de estilo con javascrip.
+
+    El valor de id nosotros lo definimos.
+
+    -->
+
+  <button id="mibotoncitito">pikale aqui</button>
+
+  <script rel="javascrip">
+    const boton = document.getElementById("mibotoncitito");
+    boton.addEventListener("click",mensaje); 
+    
+    Function mensaje() {
+      alert(ya casi teminamos)
+    }
+  </script>
+</body>
+</html>
