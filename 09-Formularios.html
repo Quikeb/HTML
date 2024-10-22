@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎫Formularios</title>
+</head>
+<body>
+    <h1>🎫Formularios</h1>
+    <p>Permiten a los usuarios ingresar y enviar datos a un servidor para ser procesados.</p>
+    <p> Es una de las partes mas importantes de los sitios web, por su interactividad u apoyo a cumprir los objetivos del sitio.</p>
+
+  <!--
+    
+    Estuctura basica
+
+    <form> -> encapsula todo los campos de entrada y controles que los usuarios pueden utilizar para enviar los datos
+
+    <imput> -> crea cap,pos de entrada en los formularios. hay varios tipos y se identifica con el atibuto type="tipoImput".
+    Son selfclosing o autocierre.
+
+    <label> -> Asocia una etiqueta de tecto con un campo de entrada. Mejora la accecibilidad y permite hacer clic en el texto y que el campo asociado obtenga el foco.
+
+  -->
+
+  <Form>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre">  
+  </Form>
+
+  <!--
+  
+    Tipos de inputs
+    
+    Se espesifican en el atributo type=tipoinput
+    -->
+
+    <!-- ingresar cadenas de texto-->
+  <Form>
+    <label for="">Tipo text</label>
+    <input type="text" >  
+  <br>
+
+
+      <!-- ingresar email-->
+  
+    <label for="">Tipo email</label>
+    <input type="email" >  
+  <br>
+
+      <!-- ingresar contraseña-->
+  
+      <label for="">Tipo contraseña</label>
+      <input type="password" >  
+  <br>
+
+      <!-- boton ebviar -->
+     
+        <label for="">Tipo boton envio</label>
+        <input type="submit" >  
+    <br>
+
+      <!-- casilla de verificacion-->
+     
+        <label for="">Tipo casilla de verificacion</label>
+        <input type="checkbox" >  
+    <br>
+
+      <!-- boton de opción-->
+      
+        <label for="">boton de opción</label>
+        <input type="radio" >  
+    <br>
+
+
+  <!-- tipo color-->
+  <br>
+    <label for="">tipo color</label>
+    <input type="color" >
+    
+
+  <!-- tipo de fecha-->
+  <br>
+  <label for="">tipo fecha</label>
+  <input type="name" >
+
+
+  <!-- tipo archivo-->
+  <br>
+    <label for="">tipo archivo </label>
+    <input type="file" >
+
+<!--
+  
+  Este elemento <select> Define un menu desplegable con opciones que el usuario puyuede elegir
+
+-->
+
+<form>
+
+<label for="">elemento seleccion</label>
+<select>
+  <option value="Mercurio"></option>
+  <option value="Venus"></option>
+  <option value="Tierra"></option>
+  <option value="Marte"></option>
+</select>
+
+</form>
+
+<!--
+
+  Elemento <textarea> Crea un campo de entrada de texto multilinea. se usa para comentarios descriptivos o descripciones largas
+
+   rows Atributos Numerofilas
+     cols Numero columnas
+-->
+
+<Form>
+  <label for="">area de texto</label>
+  <textarea rows="10" cols="30"></textarea>
+</Form>
+
+</Form>
+
+
+
+
+
+</body>
+</html>
