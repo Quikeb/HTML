@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio formulario</title>
+</head>
+
+<body>
+<h1>Ejercicio formulario</h1>
+
+<!-- seccion comentario-->
+
+<section>
+
+  <h2>Contacto</h2>
+  <form id="formulario">
+
+    <!--
+    
+      Atributo comunes en imputs
+
+      Placeholder="valor" -> ,opstrar un texto dentro del campo antes de que un usuario escriba alfo es como una sugerencia del dato que se espera.
+
+      Required -> mo recibe valor, es un catribnuto booleano. indica que es obligatorio y deve de ser entregado antes del formulario.
+
+
+    -->
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Juan Perez" required>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="tumail@correo.com" required>
+    <br>
+
+
+    <label for="mensaje"> Mensaje:</label>
+    <textarea id="mensaje" placeholder="escribe tu mensaje"> </textarea>
+    <br>
+
+    <button>Enviar 🚀</button>
+
+</form>
+
+<!-- contenerdor del mendaje  de copnformacion (Ficticio)-->
+
+<div id="mensaje" style="display: none;">
+  <p>¡Gracias por enviar sus datos, nos cumunicaremos prontro! ❤👄❤</p>
+
+</div>
+
+<script>
+    /*codigo para que funcione nuestro formuilario...*/
+
+
+
+</script>
+</section>
+</body>
+</html>
