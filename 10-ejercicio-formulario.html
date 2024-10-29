@@ -13,6 +13,7 @@
 <section>
 
   <h2>Contacto</h2>
+  
   <form id="formulario">
 
     <!--
@@ -26,8 +27,8 @@
 
     -->
 
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" placeholder="Juan Perez" required>
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre" placeholder="Juan Perez" required>
     <br>
 
     <label for="email">Email:</label>
@@ -39,20 +40,46 @@
     <textarea id="mensaje" placeholder="escribe tu mensaje"> </textarea>
     <br>
 
-    <button>Enviar 🚀</button>
+    <button type="submit">Enviar 🚀</button>
+  </form>
+  
 
-</form>
+
 
 <!-- contenerdor del mendaje  de copnformacion (Ficticio)-->
 
-<div id="mensaje" style="display: none;">
+<div id="mensajeConfirmar" style="display: none;">
   <p>¡Gracias por enviar sus datos, nos cumunicaremos prontro! ❤👄❤</p>
 
 </div>
 
-<script>
-    /*codigo para que funcione nuestro formuilario...*/
 
+<script>
+    /*codigo para que funcione nuestro formuilario...
+    */
+    //obtener el formulario y el mendaje de confirmación
+
+    const miFormulario = document .getElementBtId("formulario");
+
+    const mensajeConfirmacion = document .getElementById(mensajeConfirmacion);
+
+    //añadir un "escuchador" - "listener" para el "evento" / "event" del boton "submit"
+
+    miFormulario.addEventListener( "submit" , function(event){
+      //codigo que se va a ejecutar cuando el usuario le pique el boton 
+      //alert ("Haz dado click en el boton enviar")
+      alert ("Haz dado click en el boton enviar!")
+
+      event.preventDefault(); // Evita que el formulario recarge la pafina
+
+      //se oculte el elemento <form>
+
+      miFormulario.style.display = "none";
+
+      mensajeConfirmacion.style.display = "block"
+
+
+    })
 
 
 </script>
